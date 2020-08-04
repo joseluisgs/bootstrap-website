@@ -36,7 +36,7 @@ npm run clean
 
 * [GitHub](https://github.com/joseluisgs) ![GitHub](https://img.shields.io/github/followers/joseluisgs?style=social)
 
-* ![GitHub](https://img.shields.io/github/last-commit/joseluisgs/bootstrap-sass-init)
+* ![GitHub](https://img.shields.io/github/last-commit/joseluisgs/bootstrap-website)
 
 ## Licencia
 Este proyecto esta licenciado bajo licencia __MIT__, si desea saber más, visite el fichero [LICENSE](https://github.com/joseluisgs/notas-back-nem/blob/master/LICENSE) para su uso docente y educativo.
