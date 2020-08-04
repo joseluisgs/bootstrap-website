@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap-website",
+  "version": "1.0.0",
+  "description": "Ejemplo de Sitio Web Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gulp",
+    "clean": "rm -rf src/css && rm -rf src/fonts && rm -rf src/js",
+    "reinstall": "rm -rf node_modules && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
