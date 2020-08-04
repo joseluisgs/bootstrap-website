@@ -61,7 +61,7 @@
                     <div class="header-content-right">
                         <h1 class="display-4">Lorem, ipsum dolor.</h1>
                         <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officiis beatae laboriosam, libero quod labore. Voluptate recusandae delectus quisquam itaque, incidunt voluptatem facere, deleniti, dolorum perferendis eligendi quam dolorem minima ducimus excepturi porro numquam necessitatibus illum debitis veritatis expedita pariatur! Placeat explicabo corporis ad, eos vero dolor non nostrum saepe.</p>
-                        <a href="#" class="btn btn-outline-secondary btn-lg mt-2">Leer más</a>
+                        <a href="#" class="btn btn-outline-secondary btn-lg mt-2 header-btn">Leer más</a>
                     </div>
                 </div>
             </div>
@@ -145,6 +145,50 @@
     <script src="js/jquery.min.js" charset="utf-8"></script>
     <script src="js/popper.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <!-- MIS SCRIPTS -->
+    <script>
+        // Metodo para hacer animaciones
+        window.sr = ScrollReveal();
+        // Seleccionamos un elemento y agregamos una animacion
+        sr.reveal('.navbar', {
+                duration: 2000,
+                origin: 'bottom'
+            });
+            sr.reveal('.header-content-left', {
+                    duration: 2000,
+                    origin: 'top',
+                    distance: '300px'
+                });
+
+                sr.reveal('.header-content-right', {
+                    duration: 2000,
+                    origin: 'right',
+                    distance: '300px'
+                });
+                sr.reveal('.header-btn', {
+                        duration: 2000,
+                        delay: 1000,
+                        origin: 'bottom'
+                    });
+
+                    sr.reveal('#comentarios div', {
+                        duration: 2000,
+                        origin: 'left',
+                        distance: '300px',
+                        viewFactor: 0.2
+                    });
+
+                    // codigo de jQuery
+                     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                            anchor.addEventListener('click', function (e) {
+                                e.preventDefault();
+
+                                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                                    behavior: 'smooth'
+                                });
+                            });
+                        });
+    </script>
 </body>
 
 </html>
