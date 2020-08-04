@@ -54,14 +54,21 @@
             <div class="row pt-5">
                 <div class="col-md-6">
                     <div class="header-content-left">
-                        <img src="images/image1.png" width="100%">  
+                        <img src="images/image1.png" width="100%" class="mt-2">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="header-content-right">
                         <h1 class="display-4">Lorem, ipsum dolor.</h1>
-                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officiis beatae laboriosam, libero quod labore. Voluptate recusandae delectus quisquam itaque, incidunt voluptatem facere, deleniti, dolorum perferendis eligendi quam dolorem minima ducimus excepturi porro numquam necessitatibus illum debitis veritatis expedita pariatur! Placeat explicabo corporis ad, eos vero dolor non nostrum saepe.</p>
-                        <a href="#" class="btn btn-outline-secondary btn-lg mt-2 header-btn">Leer más</a>
+                        <p class="mt-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dignissimos officiis
+                            beatae laboriosam, libero quod labore. Voluptate recusandae delectus quisquam itaque,
+                            incidunt voluptatem facere, deleniti, dolorum perferendis eligendi quam dolorem minima
+                            ducimus excepturi porro numquam necessitatibus illum debitis veritatis expedita pariatur!
+                            Placeat explicabo corporis ad, eos vero dolor non nostrum saepe.</p>
+                        <div class="text-center text-md-left">
+                            <a href="#" class="btn btn-outline-secondary btn-lg mt-2 header-btn">Leer más</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,7 +78,10 @@
     <!-- COMENTARIOS -->
     <section id="comentarios">
         <div class="container">
-            <p class="h2 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti odio excepturi obcaecati quidem esse ipsa et officiis temporibus quia quas adipisci harum cum vel doloremque, odit modi dolorem alias dolor.</p>
+            <p class="h2 mb-2 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti odio
+                excepturi
+                obcaecati quidem esse ipsa et officiis temporibus quia quas adipisci harum cum vel doloremque, odit modi
+                dolorem alias dolor.</p>
             <p class="h4">- Pablo Marmol</p>
         </div>
     </section>
@@ -90,8 +100,14 @@
                 <div class="col-md-6 my-auto">
                     <div class="info-right">
                         <h2>Lorem ipsum dolor sit.</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A repellat qui nulla illo corrupti odio itaque quasi, ex quaerat delectus. Commodi perferendis excepturi ad alias veritatis, vel corrupti sequi optio.</p>
-                        <a href="#" class="btn btn-outline-secondary btn-kg">Leer más</a>
+                        <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A repellat qui
+                            nulla illo corrupti
+                            odio itaque quasi, ex quaerat delectus. Commodi perferendis excepturi ad alias veritatis,
+                            vel corrupti sequi optio.</p>
+                        <!-- Y con esto alineamos al centro o izquierda dependiendo de la resolucion -->
+                        <div class="text-center text-md-left">
+                            <a href="#" class="btn btn-outline-secondary btn-lg">Leer más</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,12 +118,18 @@
         <div class="container">
             <div class="row row mt-2">
                 <div class="col-md-6">
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis id nesciunt repudiandae! Nulla quae, fuga unde rerum repellendus eaque ipsa praesentium deserunt voluptates dolorem quis consequatur voluptatum vel debitis.</p>
+                    <h2 class="mt-2">Lorem, ipsum dolor.</h2>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis id
+                        nesciunt repudiandae!
+                        Nulla quae, fuga unde rerum repellendus eaque ipsa praesentium deserunt voluptates dolorem quis
+                        consequatur voluptatum vel debitis.</p>
                 </div>
                 <div class="col-md-6">
-                    <h2>Lorem ipsum dolor sit.</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, asperiores nulla. Assumenda magni quam aspernatur temporibus doloribus facere dignissimos. Perferendis a reprehenderit animi dignissimos accusamus corrupti laborum voluptatem est totam?</p>
+                    <h2 class="mt-2">Lorem ipsum dolor sit.</h2>
+                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, asperiores
+                        nulla. Assumenda
+                        magni quam aspernatur temporibus doloribus facere dignissimos. Perferendis a reprehenderit animi
+                        dignissimos accusamus corrupti laborum voluptatem est totam?</p>
                 </div>
             </div>
         </div>
@@ -121,13 +143,13 @@
                     <form class="card my-4">
                         <div class="card-body">
                             <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Nombre">
+                                <input type="text" class="form-control" placeholder="Nombre">
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="correo@dominio.com">
                             </div>
                             <div class="form-group">
-                               <textarea class= "form-control" cols="30" rows="8" placeholder="Mensaje"></textarea>
+                                <textarea class="form-control" cols="30" rows="8" placeholder="Mensaje"></textarea>
                             </div>
                             <!-- botón en bloque para que ocupe todo -->
                             <button class="btn btn-outline-secondary btn-block">Enviar</button>
@@ -151,43 +173,43 @@
         window.sr = ScrollReveal();
         // Seleccionamos un elemento y agregamos una animacion
         sr.reveal('.navbar', {
-                duration: 2000,
-                origin: 'bottom'
+            duration: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal('.header-content-left', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+
+        sr.reveal('.header-content-right', {
+            duration: 2000,
+            origin: 'right',
+            distance: '300px'
+        });
+        sr.reveal('.header-btn', {
+            duration: 2000,
+            delay: 1000,
+            origin: 'bottom'
+        });
+
+        sr.reveal('#comentarios div', {
+            duration: 2000,
+            origin: 'left',
+            distance: '300px',
+            viewFactor: 0.2
+        });
+
+        // codigo de jQuery
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
-            sr.reveal('.header-content-left', {
-                    duration: 2000,
-                    origin: 'top',
-                    distance: '300px'
-                });
-
-                sr.reveal('.header-content-right', {
-                    duration: 2000,
-                    origin: 'right',
-                    distance: '300px'
-                });
-                sr.reveal('.header-btn', {
-                        duration: 2000,
-                        delay: 1000,
-                        origin: 'bottom'
-                    });
-
-                    sr.reveal('#comentarios div', {
-                        duration: 2000,
-                        origin: 'left',
-                        distance: '300px',
-                        viewFactor: 0.2
-                    });
-
-                    // codigo de jQuery
-                     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                            anchor.addEventListener('click', function (e) {
-                                e.preventDefault();
-
-                                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                                    behavior: 'smooth'
-                                });
-                            });
-                        });
+        });
     </script>
 </body>
 

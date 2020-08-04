@@ -1,6 +1,6 @@
 // Genericos
 body {
-  font-family: 'Titillium Web', sans-serif; // Letra por defecto
+  font-family: "Titillium Web", sans-serif; // Letra por defecto
   background-color: whitesmoke;
 }
 
@@ -30,4 +30,179 @@ footer {
   background: url(../images/smartphones.png);
   // background-repeat: no-repeat;
   background-size: cover;
+}
+
+// MIS COLORES Y TEMAS
+
+/*------------------------------------
+- COLOR secondary
+------------------------------------*/
+
+$secondary_t1: #7790f7;
+$secondary_t2: #7d95f7;
+$secondary_t3: rgba(95, 125, 241, 0.774);
+$secondary_t4: rgb(114, 140, 249);
+$secondary_t5: #2d54f5;
+$secondary_t6: #6380f8;
+$secondary_t7: #8098f9;
+$secondary_t8: #0a34e6;
+$secondary_t9: #0a34e6;
+
+$secondary_shadow: rgba(163, 180, 251, 0.5);
+$secondary_text_color_dark_bright: #212529;
+
+.alert-secondary {
+  color: $secondary_t5;
+  background-color: $secondary_t9;
+  border-color: $secondary_t4;
+}
+
+.alert-secondary hr {
+  border-top-color: $secondary_t3;
+}
+
+.alert-secondary .alert-link {
+  color: $secondary_t8;
+}
+
+.badge-secondary {
+  color: $secondary_text_color_dark_bright;
+  background-color: $secondary_t1;
+}
+
+.badge-secondary[href]:hover,
+.badge-secondary[href]:focus {
+  color: $secondary_text_color_dark_bright;
+  background-color: $secondary_t2;
+}
+
+.bg-secondary {
+  background-color: $secondary_t1 !important;
+}
+
+a.bg-secondary:hover,
+a.bg-secondary:focus,
+button.bg-secondary:hover,
+button.bg-secondary:focus {
+  background-color: $secondary_t2 !important;
+}
+
+.border-secondary {
+  border-color: $secondary_t1 !important;
+}
+
+.btn-secondary {
+  color: $secondary_text_color_dark_bright;
+  background-color: $secondary_t1;
+  border-color: $secondary_t1;
+}
+
+.btn-secondary:hover {
+  color: $secondary_text_color_dark_bright;
+  background-color: $secondary_t7;
+  border-color: $secondary_t2;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+  box-shadow: 0 0 0 0.2rem $secondary_shadow;
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: $secondary_text_color_dark_bright;
+  background-color: $secondary_t1;
+  border-color: $secondary_t1;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: $secondary_text_color_dark_bright;
+  background-color: $secondary_t2;
+  border-color: $secondary_t6;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $secondary_shadow;
+}
+
+.btn-outline-secondary {
+  color: $secondary_t1;
+  background-color: transparent;
+  border-color: $secondary_t1;
+}
+
+.btn-outline-secondary:hover {
+  color: $secondary_text_color_dark_bright;
+  background-color: $secondary_t1;
+  border-color: $secondary_t1;
+}
+
+.btn-outline-secondary:focus,
+.btn-outline-secondary.focus {
+  box-shadow: 0 0 0 0.2rem $secondary_shadow;
+}
+
+.btn-outline-secondary.disabled,
+.btn-outline-secondary:disabled {
+  color: $secondary_t1;
+  background-color: transparent;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-secondary.dropdown-toggle {
+  color: $secondary_text_color_dark_bright;
+  background-color: $secondary_t1;
+  border-color: $secondary_t1;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $secondary_shadow;
+}
+
+.list-group-item-secondary {
+  color: $secondary_t5;
+  background-color: $secondary_t4;
+}
+
+.list-group-item-secondary.list-group-item-action:hover,
+.list-group-item-secondary.list-group-item-action:focus {
+  color: $secondary_t5;
+  background-color: $secondary_t3;
+}
+
+.list-group-item-secondary.list-group-item-action.active {
+  color: $secondary_text_color_dark_bright;
+  background-color: $secondary_t5;
+  border-color: $secondary_t5;
+}
+
+.table-secondary,
+.table-secondary > th,
+.table-secondary > td {
+  background-color: $secondary_t4;
+}
+
+.table-hover .table-secondary:hover {
+  background-color: $secondary_t3;
+}
+
+.table-hover .table-secondary:hover > td,
+.table-hover .table-secondary:hover > th {
+  background-color: $secondary_t3;
+}
+
+.text-secondary {
+  color: $secondary_t1 !important;
+}
+
+a.text-secondary:hover,
+a.text-secondary:focus {
+  color: $secondary_t2 !important;
 }
