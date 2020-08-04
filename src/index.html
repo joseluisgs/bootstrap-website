@@ -11,19 +11,47 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-    <!-- SCROLLREVEAL-->
-    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- MIS FUENTES -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
 </head>
 
 <body>
-
-    <h1 class="display-1">Hola</h1>
-
-
+    <!-- NAVEGACION -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <!-- Meto un contenedor para que no esté pegado -->
+        <div class="container">
+            <!-- Marca e icono -->
+            <a class="navbar-brand" href="#">
+                <img src="images/favicon.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                    loading="lazy">
+                Bootstrap Website</a>
+            <!-- Botón de minimizar -->
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <!-- alineamos a la izquierda -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca De</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- SCRIPTS -->
+    <!-- SCROLLREVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- BOOTSTRAP -->
     <script src="js/jquery.min.js" charset="utf-8"></script>
     <script src="js/popper.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
